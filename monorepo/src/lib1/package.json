@@ -1,0 +1,27 @@
+{
+  "name": "@monorepo/lib1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/lib1.umd.js",
+  "module": "./dist/lib1.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/lib1.umd.js",
+      "import": "./dist/lib1.es.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.12",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}

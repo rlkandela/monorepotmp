@@ -1,0 +1,13 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "workspaces": [
+    "src/*"
+  ],
+  "scripts": {
+    "build:l1": "npm run build --workspace src/lib1",
+    "build:l2": "npm run build --workspace src/lib2",
+    "build": "npm run build:l1 && npm run build:l2",
+    "exec": "node src/lib2/dist/lib2.umd.js"
+  }
+}

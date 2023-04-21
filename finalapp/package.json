@@ -1,0 +1,17 @@
+{
+  "name": "finalapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "exec": "node dist/finalapp.umd.js"
+  },
+  "devDependencies": {
+    "@monorepo/lib1": "file:/tmp/pruebanode/monorepo/src/lib1",
+    "@types/node": "^18.15.12",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}

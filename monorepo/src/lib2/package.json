@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo/lib2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@monorepo/lib1": "^0.0.0",
+    "@types/node": "^18.15.12",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
